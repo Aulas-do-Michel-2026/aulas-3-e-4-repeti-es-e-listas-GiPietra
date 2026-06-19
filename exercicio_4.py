@@ -60,6 +60,3 @@ elif maior_valor_segunda > maior_valor:
 else:
     print("Ambas")
 
-
-
-    print("Ambas")
