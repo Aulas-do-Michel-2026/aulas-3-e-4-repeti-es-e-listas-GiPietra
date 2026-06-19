@@ -25,3 +25,12 @@ Pode-se utilizar o comando "while" ou até o "for" para te ajudar nisso.
 
 Fonte: Curso em vídeo.
 """
+
+valor_input = int(input("Digite o numero a ser fatoriado: "))
+
+fatorial = 1
+
+for i in range(1, valor_input + 1):
+    fatorial *= i
+
+print (f"O fatorial de {valor_input} é {fatorial}")
