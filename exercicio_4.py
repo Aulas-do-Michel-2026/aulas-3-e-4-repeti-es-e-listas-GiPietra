@@ -34,3 +34,31 @@ primeira_lista = [*map(int, input("Digite a sua primeira lista (separando os nú
 segunda_lista = [*map(int, input("Digite a sua segunda lista (separando os números por vírgula): ").split(","))]
 
 # Fazer a partir daqui
+
+
+
+def acha_maior_valor(lista):
+    maior_valor = 0
+    for i in range(len(lista)): 
+        if i ==0: 
+            maior_valor = lista[i]
+        elif lista[i] > maior_valor: 
+            maior_valor = lista[i]
+    return maior_valor
+
+
+
+primeira_lista = [*map(int, input("Digite a sua primeira lista (separando os números por vírgula): ").split(","))]
+segunda_lista = [*map(int, input("Digite a sua segunda lista (separando os números por vírgula): ").split(","))]
+
+
+maior_valor_prim = acha_maior_valor(primeira_lista)
+
+maior_valor_seg = acha_maior_valor(segunda_lista)
+
+if maior_valor_prim > maior_valor_seg: 
+    print("Primeira")
+elif maior_valor_seg > maior_valor_prim: 
+    print("Segunda")
+else:
+    print("Ambas")
